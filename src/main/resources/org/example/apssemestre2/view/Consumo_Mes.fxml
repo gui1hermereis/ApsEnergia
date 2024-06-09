@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="DatePickerFiltro" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apssemestre2.controller.ConsumoMesController">
+   <children>
+      <LineChart fx:id="LineChartUsoMes" layoutX="16.0" layoutY="47.0" prefHeight="335.0" prefWidth="445.0" title="Consumo Mensal">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <DatePicker fx:id="DatePcikerFim" layoutX="523.0" layoutY="133.0" prefHeight="25.0" prefWidth="70.0" promptText="Fim" />
+      <DatePicker fx:id="DatePickerInicio" layoutX="523.0" layoutY="89.0" prefHeight="25.0" prefWidth="70.0" promptText="Inicio" />
+      <Label layoutX="463.0" layoutY="93.0" text="Dt Inicial :" />
+      <Label layoutX="465.0" layoutY="137.0" text="Dt Final : " />
+   </children>
+</AnchorPane>
